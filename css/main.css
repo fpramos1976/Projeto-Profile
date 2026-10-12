@@ -293,12 +293,15 @@ html[data-theme="dark"] .imageDark {
 * SECTION PROJECTS
 */
 .projectsContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* flex + wrap: a última linha de cards fica centralizada, como na Stack */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 60px 40px;
   margin-top: 100px;
 }
 .projectBox {
+  flex: 0 1 375px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
