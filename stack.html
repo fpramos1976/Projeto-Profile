@@ -1,204 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt" data-theme="light">
+<html lang="pt-BR" data-theme="light">
   <head>
-    <title>Portifolio Fabio Ramos</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack | Fabio Ramos</title>
+    <meta name="description" content="Tecnologias com que Fabio Ramos trabalha." />
+    <meta property="og:title" content="Stack | Fabio Ramos" />
+    <meta property="og:description" content="Tecnologias com que Fabio Ramos trabalha." />
+    <meta property="og:image" content="assets/images/avatar-fabio.jpg" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" type="image/png" href="/assets/images/Fabio-Ramos-Cartoon-Logo.svg">
+    <!-- Carregado no head para aplicar o tema antes da página ser desenhada -->
+    <script src="assets/main.js"></script>
   </head>
   <body class="stack-page">
+    <a class="skipLink" href="#conteudo">Pular para o conteúdo</a>
     <div class="container">
-    <header class="primaryHeadear">
-      <div class="columnLeft">
-        <h2>Fabio Ramos</h2>
-        <img src="assets/images/Fabio Ramos Cartoon Logo.png" alt="avatar Fabio Ramos" width="40" height="40">
-        <button id="toggleDarkMode" onclick="toggleDarkMode()">
-          <svg xmlns="http://www.w3.org/2000/svg" 
-          width="24" 
-          height="24" 
-          viewBox="0 0 24 24" 
-          fill="none" 
-          stroke="currentColor" 
-          stroke-width="2" 
-          stroke-linecap="round" 
-          stroke-linejoin="round" 
-          class="lucide lucide-moon-icon lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/>
-          </svg>
-        </button>
-      </div>
-      <div class="columnRight">
-        <nav>
-          <ul>
+      <header class="primaryHeader">
+        <div class="columnLeft">
+          <a class="brand" href="index.html">
+            <span>Fabio Ramos</span>
+            <img src="assets/images/logo-fabio.png" alt="" width="40" height="40" />
+          </a>
+          <button id="toggleDarkMode" type="button" aria-label="Alternar tema claro/escuro">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </button>
+        </div>
+
+        <nav class="columnRight" aria-label="Menu principal">
+          <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">SOBRE MIM</a></li>
+            <li><a href="stack.html" aria-current="page">STACK</a></li>
+            <li><a href="project.html">PROJETOS</a></li>
+            <li><a href="contact.html">CONTATO</a></li>
+          </ul>
+          <ul class="socialList">
             <li>
-              <a href="index.html">HOME</a>
-            </li>
-            <li>
-              <a href="about.html">SOBRE MIM</a>
-            </li>
-            <li>
-              <a href="stack.html">STACK</a>
-            </li>
-            <li>
-              <a href="project.html">PROJETO</a>
-            </li>
-            <li>
-              <a href="contact.html">CONTATO</a>
-            </li>
-            <li>
-              <a href="https://github.com/fpramos1976" target="_blank">
-              <img 
-              src="/assets/images/icon-github.png" 
-              alt="GitHub" 
-              width="30" 
-              height="30">
-            </li>
+              <a href="https://github.com/fpramos1976" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="assets/images/icon-github.png" alt="" width="30" height="30" />
               </a>
+            </li>
             <li>
-              <a href="https://x.com/fpramos_76?s=21" target="_blank">
-              <img 
-              src="/assets/images/icon-twitter.png" 
-              alt="icon-twitter" 
-              width="30" 
-              height="30"><a href="/assets/images/icon-twitter.png">
-              </li>
+              <a href="https://x.com/fpramos_76" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <img src="assets/images/icon-twitter.png" alt="" width="30" height="30" />
               </a>
+            </li>
             <li>
-              <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
-              <img 
-              src="/assets/images/icon-linkedin.png" 
-              alt="icon-twitter" 
-              width="30" 
-              height="30"><a href="/assets/images/icon-linkedin.png">
-              </li>
+              <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="assets/images/icon-linkedin.png" alt="" width="30" height="30" />
               </a>
+            </li>
           </ul>
         </nav>
-      </div>
-    </header>
-
-    <section class="sectionStack">
-      <header>
-        <h2>A minha Stack</h2>
-        <h3>Tecnologia com que trabalho</h3>
       </header>
-      <div class="stackImagesContainer">
-        <img src="/assets/images/vscode-icons_file-type-html.png" alt="html" 
-        width="120">
-        <img src="/assets/images/vscode-icons_file-type-css.png" alt="css" 
-        width="120">
-        <img src="/assets/images/vscode-icons_file-type-js-official.png" alt="js" 
-        width="120">
-        <img src="assets/images/logos_react.png" alt="react" 
-        width="120">
-        <img src="assets/images/python-logo.png" alt="python-logo" 
-        width="120">
-        <img src="/assets/images/vscode-icons_file-type-vscode.png" alt="vccode" 
-        width="120">
-        <img src="/assets/images/logos_java.png" alt="java" 
-        width="120"
-        class="imageLight">
-        <img src="/assets/images/logos_java.png" alt="java" 
-        width="120"
-        class="imageDark">
-        <img src="/assets/images/logos_Csharp.png" alt="C#" 
-        width="120">
-        <img src="/assets/images/logos_git-icon.png" alt="github" 
-        width="120">
-        <img src="/assets/images/akar-icons_github-fill.png" alt="github" 
-        width="120"
-        class="imageDark">
-        <img src="/assets/images/akar-icons_github-fill-black.png" alt="github" 
-        width="120"
-        class="imageLight">
-        
-        
 
-      </div>
-          <footer class="footerWrapper">
-          <div class="mainFooter">
-            <div class="mainFooterColumn left">
-              <h2>Fabio Ramos</h2>
-              <img src="/assets/images/Fabio Ramos Cartoon Logo.png" alt="avatar cartoon Fabio" width="40" height="40">
-            </div>
-            <div class="mainFooterColumn right">
-              <div>
-                <a href="mailto:fpramos1976@gmail.com">fpramos1976@gmail.com</a>
-              </div>
-              <div>
-                <ul>
-                  <li>
-                    <a href="https://github.com/fpramos1976" target="_blank">
-                      <img
-                        src="assets/images/icon-github.png"
-                        alt="icon github"
-                        width="30"
-                        height="30"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://x.com/fpramos_76?s=21" target="_blank">
-                      <img
-                        src="assets/images/icon-twitter.png"
-                        alt="icon twitter"
-                        width="30"
-                        height="30"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/icon-linkedin.png"
-                        alt="icon linkedin"
-                        width="30"
-                        height="30"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+      <main id="conteudo">
+        <section class="sectionStack">
+          <header>
+            <h1>A minha Stack</h1>
+            <p class="subtitle">Tecnologias com que trabalho</p>
+          </header>
+          <ul class="stackImagesContainer">
+            <li>
+              <img src="assets/images/vscode-icons_file-type-html.png" alt="" width="120" height="120" loading="lazy" />
+              <span>HTML</span>
+            </li>
+            <li>
+              <img src="assets/images/vscode-icons_file-type-css.png" alt="" width="120" height="120" loading="lazy" />
+              <span>CSS</span>
+            </li>
+            <li>
+              <img src="assets/images/vscode-icons_file-type-js-official.png" alt="" width="120" height="120" loading="lazy" />
+              <span>JavaScript</span>
+            </li>
+            <li>
+              <img src="assets/images/logos_react.png" alt="" width="120" height="120" loading="lazy" />
+              <span>React</span>
+            </li>
+            <li>
+              <img src="assets/images/python-logo.png" alt="" width="120" height="120" loading="lazy" />
+              <span>Python</span>
+            </li>
+            <li>
+              <img src="assets/images/logos_java.png" alt="" width="120" height="120" loading="lazy" />
+              <span>Java</span>
+            </li>
+            <li>
+              <img src="assets/images/logos_Csharp.png" alt="" width="120" height="120" loading="lazy" />
+              <span>C#</span>
+            </li>
+            <li>
+              <img src="assets/images/vscode-icons_file-type-vscode.png" alt="" width="120" height="120" loading="lazy" />
+              <span>VS Code</span>
+            </li>
+            <li>
+              <img src="assets/images/logos_git-icon.png" alt="" width="120" height="120" loading="lazy" />
+              <span>Git</span>
+            </li>
+            <li>
+              <img class="imageLight" src="assets/images/akar-icons_github-fill-black.png" alt="" width="120" height="120" loading="lazy" />
+              <img class="imageDark" src="assets/images/akar-icons_github-fill.png" alt="" width="120" height="120" loading="lazy" />
+              <span>GitHub</span>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footerWrapper">
+        <div class="mainFooter">
+          <div class="mainFooterColumn left">
+            <a class="brand" href="index.html">
+              <span>Fabio Ramos</span>
+              <img src="assets/images/logo-fabio.png" alt="" width="40" height="40" />
+            </a>
           </div>
-          <div class="miniFooter">
-            <nav>
-              <ul>
-                <li>
-              <a href="index.html">HOME</a>
+          <div class="mainFooterColumn right">
+            <a href="mailto:fpramos1976@gmail.com">fpramos1976@gmail.com</a>
+            <ul class="socialList">
+            <li>
+              <a href="https://github.com/fpramos1976" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="assets/images/icon-github.png" alt="" width="30" height="30" />
+              </a>
             </li>
             <li>
-              <a href="about.html">SOBRE MIM</a>
+              <a href="https://x.com/fpramos_76" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <img src="assets/images/icon-twitter.png" alt="" width="30" height="30" />
+              </a>
             </li>
             <li>
-              <a href="stack.html">STACK</a>
+              <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="assets/images/icon-linkedin.png" alt="" width="30" height="30" />
+              </a>
             </li>
-            <li>
-              <a href="project.html">PROJETO</a>
-            </li>
-            <li>
-              <a href="contact.html">CONTATO</a>
-            </li>
-              </ul>
-            </nav>
+          </ul>
           </div>
-        </footer>
-
-     
-      
-      <script src="assets/main.js"></script>
-
-    </main>
+        </div>
+        <div class="miniFooter">
+          <nav aria-label="Menu do rodapé">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">SOBRE MIM</a></li>
+              <li><a href="stack.html" aria-current="page">STACK</a></li>
+              <li><a href="project.html">PROJETOS</a></li>
+              <li><a href="contact.html">CONTATO</a></li>
+            </ul>
+          </nav>
+          <small>&copy; <span id="currentYear">2025</span> Fabio Ramos</small>
+        </div>
+      </footer>
     </div>
-
-    
   </body>
 </html>
