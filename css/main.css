@@ -450,6 +450,9 @@ html[data-theme="dark"] .imageDark {
   align-items: center;
   gap: 6px;
 }
+.certLink {
+  font-size: 1.4rem;
+}
 .contact-page .pageItem {
   text-align: center;
 }
