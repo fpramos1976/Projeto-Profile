@@ -1,414 +1,250 @@
 <!DOCTYPE html>
-<html lang="pt" data-theme="light">
+<html lang="pt-BR" data-theme="light">
   <head>
-    <title>Portifolio Fabio Ramos</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos | Fabio Ramos</title>
+    <meta name="description" content="Projetos desenvolvidos por Fabio Ramos." />
+    <meta property="og:title" content="Projetos | Fabio Ramos" />
+    <meta property="og:description" content="Projetos desenvolvidos por Fabio Ramos." />
+    <meta property="og:image" content="assets/images/avatar-fabio.jpg" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" type="image/png" href="/assets/images/Fabio-Ramos-Cartoon-Logo.svg">
+    <!-- Carregado no head para aplicar o tema antes da página ser desenhada -->
+    <script src="assets/main.js"></script>
   </head>
-
-  <body>
+  <body class="projects-page">
+    <a class="skipLink" href="#conteudo">Pular para o conteúdo</a>
     <div class="container">
-    <header class="primaryHeadear">
-      <div class="columnLeft">
-        <h2>Fabio Ramos</h2>
-        <img src="assets/images/Fabio Ramos Cartoon Logo.png" alt="Logo Fabio Ramos" 
-        width="40" 
-        height="40">
-        <button id="toggleDarkMode" onclick="toggleDarkMode()">
-          <svg xmlns="http://www.w3.org/2000/svg" 
-          width="24" 
-          height="24" 
-          viewBox="0 0 24 24" 
-          fill="none" 
-          stroke="currentColor" 
-          stroke-width="2" 
-          stroke-linecap="round" 
-          stroke-linejoin="round" 
-          class="lucide lucide-moon-icon lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/>
-          </svg>
-        </button>
-      </div>
+      <header class="primaryHeader">
+        <div class="columnLeft">
+          <a class="brand" href="index.html">
+            <span>Fabio Ramos</span>
+            <img src="assets/images/logo-fabio.png" alt="" width="40" height="40" />
+          </a>
+          <button id="toggleDarkMode" type="button" aria-label="Alternar tema claro/escuro">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </button>
+        </div>
 
-      <div class="columnRight">
-        <nav>
-          <ul>
+        <nav class="columnRight" aria-label="Menu principal">
+          <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">SOBRE MIM</a></li>
+            <li><a href="stack.html">STACK</a></li>
+            <li><a href="project.html" aria-current="page">PROJETOS</a></li>
+            <li><a href="contact.html">CONTATO</a></li>
+          </ul>
+          <ul class="socialList">
             <li>
-              <a href="index.html">HOME</a>
-            </li>
-            <li>
-              <a href="about.html">SOBRE MIM</a>
-            </li>
-            <li>
-              <a href="stack.html">STACK</a>
-            </li>
-            <li>
-              <a href="project.html">PROJETO</a>
-            </li>
-            <li>
-              <a href="contact.html">CONTATO</a>
-            </li>
-            <li>
-              <a href="https://github.com/fpramos1976" target="_blank">
-              <img 
-              src="/assets/images/icon-github.png" 
-              alt="GitHub" 
-              width="30" 
-              height="30">
-            </li>
+              <a href="https://github.com/fpramos1976" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="assets/images/icon-github.png" alt="" width="30" height="30" />
               </a>
+            </li>
             <li>
-              <a href="https://x.com/fpramos_76?s=21" target="_blank">
-              <img 
-              src="/assets/images/icon-twitter.png" 
-              alt="icon-twitter" 
-              width="30" 
-              height="30"><a href="/assets/images/icon-twitter.png">
-              </li>
+              <a href="https://x.com/fpramos_76" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <img src="assets/images/icon-twitter.png" alt="" width="30" height="30" />
               </a>
+            </li>
             <li>
-              <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
-              <img 
-              src="/assets/images/icon-linkedin.png" 
-              alt="icon-twitter" 
-              width="30" 
-              height="30"><a href="/assets/images/icon-linkedin.png">
-              </li>
+              <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="assets/images/icon-linkedin.png" alt="" width="30" height="30" />
               </a>
+            </li>
           </ul>
         </nav>
-      </div>
-    </header>
-    <header class="projects-page">
-    <section class="sectionProjects">
-      <header>
-        <h2>Projetos</h2>
-        <h3>Projetos Desenvolvidos</h3>
       </header>
-      <div class="projectsContainer">
-        <article class="projectBox">
+
+      <main id="conteudo">
+        <section class="sectionProjects">
           <header>
-            <img src="/assets/images/project1img.jpg" alt="imagem projeto" 
-            width="375">
+            <h1>Projetos</h1>
+            <p class="subtitle">Projetos desenvolvidos</p>
           </header>
-          <div class="projectContent">
-            <h4>Portifolio</h4>
-            <p>Este é o meu primeiro projeto utilizando HTML, CSS e JavaScript, desenvolvido como parte do meu aprendizado em desenvolvimento web. Trata-se de um portfólio pessoal onde apresento minhas informações, habilidades, projetos e formas de contato. O objetivo principal foi praticar a estruturação de páginas com HTML, estilização com CSS e adicionar interatividade com JavaScript, criando um design responsivo e agradável para diferentes dispositivos.</p>
-            <small>
-              <strong>Tech Stack: HTML , CSS. JavaScript</strong> 
-            </small>
-            <div class="projectActions">
-              <div class="linkWithIcon">
-                <svg 
-                width="20" 
-                height="20" 
-                viewBox="0 0 20 20" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.2867 8.7133C10.6041 8.031 9.67846 7.64771 8.71334 7.64771C7.74821 7.64771 6.82259 8.031 6.14 8.7133L3.56584 11.2866C2.88324 11.9692 2.49976 12.895 2.49976 13.8604C2.49976 14.8257 2.88324 15.7515 3.56584 16.4341C4.24844 17.1167 5.17424 17.5002 6.13959 17.5002C7.10493 17.5002 8.03074 17.1167 8.71334 16.4341L10 15.1475" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M8.71332 11.2867C9.39591 11.969 10.3215 12.3523 11.2867 12.3523C12.2518 12.3523 13.1774 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5002 7.10493 17.5002 6.13959C17.5002 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8257 2.49976 13.8604 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L9.99998 4.8525" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+          <div class="projectsContainer">
+            <article class="projectBox">
+              <img src="assets/images/project1img.jpg" alt="Imagem do projeto Portfólio" width="375" height="260" loading="lazy" />
+              <div class="projectContent">
+                <h3>Portfólio</h3>
+                <p>Meu primeiro projeto utilizando HTML, CSS e JavaScript, desenvolvido como parte do meu aprendizado em desenvolvimento web. É um portfólio pessoal onde apresento minhas informações, habilidades, projetos e formas de contato. O objetivo foi praticar a estruturação de páginas com HTML, a estilização com CSS e adicionar interatividade com JavaScript (tema claro/escuro), criando um layout responsivo.</p>
+                <p class="techStack"><strong>Tech stack:</strong> HTML, CSS, JavaScript</p>
+                <div class="projectActions">
+                  <a class="linkWithIcon" href="https://fpramos1976.github.io/Projeto-Profile/" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M11.2867 8.7133C10.6041 8.031 9.67846 7.64771 8.71334 7.64771C7.74821 7.64771 6.82259 8.031 6.14 8.7133L3.56584 11.2866C2.88324 11.9692 2.49976 12.895 2.49976 13.8604C2.49976 14.8257 2.88324 15.7515 3.56584 16.4341C4.24844 17.1167 5.17424 17.5002 6.13959 17.5002C7.10493 17.5002 8.03074 17.1167 8.71334 16.4341L10 15.1475" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8.71332 11.2867C9.39591 11.969 10.3215 12.3523 11.2867 12.3523C12.2518 12.3523 13.1774 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5002 7.10493 17.5002 6.13959C17.5002 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8257 2.49976 13.8604 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L9.99998 4.8525" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <a href="https://github.com/fpramos1976/projeto-profile" target="blank">Live Preview</a>
-                </div>
-
-                <div class="linkWithIcon">
-                <svg 
-                width="20" 
-                height="20" 
-                viewBox="0 0 20 20" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_10_167)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="black"></path>
-                </g><defs><clipPath id="clip0_10_167"><rect 
-                width="20" height="20" fill="white"></rect>
-                </clipPath></defs>
+                    Live Preview
+                  </a>
+                  <a class="linkWithIcon" href="https://github.com/fpramos1976/Projeto-Profile" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
                 </svg>
-                <a href="https://github.com/fpramos1976/projeto-profile" target="_blank">View Code</a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="projectBox">
-              <header>
-                <img width="375" src="/assets/images/project2img.jpg" alt="img1">
-              </header>
-              <div class="projectContent">
-                <h4>HTML e CSS posições de imagens e texto</h4>
-                <p>
-                  Desenvolvimento de página em HTML e CSS com foco em estruturação de layout, posicionamento de imagens em relação ao texto, aplicação e customização de bordas, manipulação de margens e espaçamentos para testes de alinhamento e estilização visual.                </p>
-                <small>
-                  <strong>Tech stack:</strong> HTML , JavaScript, SASS, React
-                </small>
-                <div class="projectActions">
-                  <div class="linkWithIcon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.2867 8.7133C10.6041 8.031 9.67846 7.64771 8.71334 7.64771C7.74821 7.64771 6.82259 8.031 6.14 8.7133L3.56584 11.2866C2.88324 11.9692 2.49976 12.895 2.49976 13.8604C2.49976 14.8257 2.88324 15.7515 3.56584 16.4341C4.24844 17.1167 5.17424 17.5002 6.13959 17.5002C7.10493 17.5002 8.03074 17.1167 8.71334 16.4341L10 15.1475" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M8.71332 11.2867C9.39591 11.969 10.3215 12.3523 11.2867 12.3523C12.2518 12.3523 13.1774 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5002 7.10493 17.5002 6.13959C17.5002 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8257 2.49976 13.8604 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L9.99998 4.8525" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    <a href="https://github.com/fpramos1976/teste-de-imagem.git" target="_blank">Live Preview</a>
-                  </div>
-                  <div class="linkWithIcon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_10_167)">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="black"></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_10_167">
-                          <rect width="20" height="20" fill="white"></rect>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <a href="https://github.com/fpramos1976/teste-de-imagem" target="_blank">View Code</a>
-                  </div>
+                    View Code
+                  </a>
                 </div>
               </div>
             </article>
             <article class="projectBox">
-              <header>
-                <img width="375" src="/assets/images/project3img.jpg" alt="img1">
-              </header>
+              <img src="assets/images/project-relogio.jpg" alt="Imagem do projeto Relógio Digital" width="375" height="260" loading="lazy" />
               <div class="projectContent">
-                <h4>Título do projeto 3</h4>
-                <p>
-                  Este é um exemplo de descrição do projeto, coisas aleatórias
-                  estão aqui na descrição Este é um exemplo de projeto, gerador
-                  lorem ipsum para conteúdo fictício
-                </p>
-                <small>
-                  <strong>Tech stack:</strong> HTML , JavaScript, SASS, React
-                </small>
+                <h3>Relógio Digital</h3>
+                <p>Relógio digital com data que se atualiza a cada segundo, feito com JavaScript puro. Pratica manipulação do DOM, uso do objeto Date, formatação com padStart e atualização periódica com setInterval.</p>
+                <p class="techStack"><strong>Tech stack:</strong> HTML, CSS, JavaScript</p>
                 <div class="projectActions">
-                  <div class="linkWithIcon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.2867 8.7133C10.6041 8.031 9.67846 7.64771 8.71334 7.64771C7.74821 7.64771 6.82259 8.031 6.14 8.7133L3.56584 11.2866C2.88324 11.9692 2.49976 12.895 2.49976 13.8604C2.49976 14.8257 2.88324 15.7515 3.56584 16.4341C4.24844 17.1167 5.17424 17.5002 6.13959 17.5002C7.10493 17.5002 8.03074 17.1167 8.71334 16.4341L10 15.1475" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M8.71332 11.2867C9.39591 11.969 10.3215 12.3523 11.2867 12.3523C12.2518 12.3523 13.1774 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5002 7.10493 17.5002 6.13959C17.5002 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8257 2.49976 13.8604 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L9.99998 4.8525" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    <a href="#">Live Preview</a>
-                  </div>
-                  <div class="linkWithIcon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_10_167)">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="black"></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_10_167">
-                          <rect width="20" height="20" fill="white"></rect>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <a href="#">View Code</a>
-                  </div>
+                  <a class="linkWithIcon" href="https://fpramos1976.github.io/RELOGIO/" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M11.2867 8.7133C10.6041 8.031 9.67846 7.64771 8.71334 7.64771C7.74821 7.64771 6.82259 8.031 6.14 8.7133L3.56584 11.2866C2.88324 11.9692 2.49976 12.895 2.49976 13.8604C2.49976 14.8257 2.88324 15.7515 3.56584 16.4341C4.24844 17.1167 5.17424 17.5002 6.13959 17.5002C7.10493 17.5002 8.03074 17.1167 8.71334 16.4341L10 15.1475" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8.71332 11.2867C9.39591 11.969 10.3215 12.3523 11.2867 12.3523C12.2518 12.3523 13.1774 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5002 7.10493 17.5002 6.13959C17.5002 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8257 2.49976 13.8604 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L9.99998 4.8525" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                    Live Preview
+                  </a>
+                  <a class="linkWithIcon" href="https://github.com/fpramos1976/RELOGIO" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
+                </svg>
+                    View Code
+                  </a>
                 </div>
               </div>
             </article>
             <article class="projectBox">
-              <header>
-                <img width="375" src="/assets/images/project4img.jpg" alt="img1">
-              </header>
+              <img src="assets/images/project-lista-de-tarefas.jpg" alt="Imagem do projeto Lista de Tarefas" width="375" height="260" loading="lazy" />
               <div class="projectContent">
-                <h4>Título do projeto 4</h4>
-                <p>
-                  Este é um exemplo de descrição do projeto, coisas aleatórias
-                  estão aqui na descrição Este é um exemplo de projeto, gerador
-                  lorem ipsum para conteúdo fictício
-                </p>
-                <small>
-                  <strong>Tech stack:</strong> HTML , JavaScript, SASS, React
-                </small>
+                <h3>Lista de Tarefas</h3>
+                <p>Gerenciador de tarefas em React: adicionar, concluir, editar e excluir tarefas. Pratica componentes, estado com useState, formulários controlados e renderização de listas.</p>
+                <p class="techStack"><strong>Tech stack:</strong> React, Vite, JavaScript</p>
                 <div class="projectActions">
-                  <div class="linkWithIcon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.2867 8.7133C10.6041 8.031 9.67846 7.64771 8.71334 7.64771C7.74821 7.64771 6.82259 8.031 6.14 8.7133L3.56584 11.2866C2.88324 11.9692 2.49976 12.895 2.49976 13.8604C2.49976 14.8257 2.88324 15.7515 3.56584 16.4341C4.24844 17.1167 5.17424 17.5002 6.13959 17.5002C7.10493 17.5002 8.03074 17.1167 8.71334 16.4341L10 15.1475" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M8.71332 11.2867C9.39591 11.969 10.3215 12.3523 11.2867 12.3523C12.2518 12.3523 13.1774 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5002 7.10493 17.5002 6.13959C17.5002 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8257 2.49976 13.8604 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L9.99998 4.8525" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    <a href="#">Live Preview</a>
-                  </div>
-                  <div class="linkWithIcon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_10_167)">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="black"></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_10_167">
-                          <rect width="20" height="20" fill="white"></rect>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <a href="#">View Code</a>
-                  </div>
+                  <a class="linkWithIcon" href="https://github.com/fpramos1976/LISTA_DE_TAREFAS" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
+                </svg>
+                    View Code
+                  </a>
                 </div>
               </div>
             </article>
             <article class="projectBox">
-              <header>
-                <img width="375" src="/assets/images/project5img.jpg" alt="img1">
-              </header>
+              <img src="assets/images/project-imc.jpg" alt="Imagem do projeto Calculadora de IMC" width="375" height="260" loading="lazy" />
               <div class="projectContent">
-                <h4>Título do projeto 5</h4>
-                <p>
-                  Este é um exemplo de descrição do projeto, coisas aleatórias
-                  estão aqui na descrição Este é um exemplo de projeto, gerador
-                  lorem ipsum para conteúdo fictício
-                </p>
-                <small>
-                  <strong>Tech stack:</strong> HTML , JavaScript, SASS, React
-                </small>
+                <h3>Calculadora de IMC</h3>
+                <p>Calculadora de Índice de Massa Corporal que valida os dados digitados, calcula o IMC e mostra a classificação (abaixo do peso, normal, sobrepeso e graus de obesidade).</p>
+                <p class="techStack"><strong>Tech stack:</strong> HTML, CSS, JavaScript</p>
                 <div class="projectActions">
-                  <div class="linkWithIcon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.2867 8.7133C10.6041 8.031 9.67846 7.64771 8.71334 7.64771C7.74821 7.64771 6.82259 8.031 6.14 8.7133L3.56584 11.2866C2.88324 11.9692 2.49976 12.895 2.49976 13.8604C2.49976 14.8257 2.88324 15.7515 3.56584 16.4341C4.24844 17.1167 5.17424 17.5002 6.13959 17.5002C7.10493 17.5002 8.03074 17.1167 8.71334 16.4341L10 15.1475" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M8.71332 11.2867C9.39591 11.969 10.3215 12.3523 11.2867 12.3523C12.2518 12.3523 13.1774 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5002 7.10493 17.5002 6.13959C17.5002 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8257 2.49976 13.8604 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L9.99998 4.8525" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    <a href="#">Live Preview</a>
-                  </div>
-                  <div class="linkWithIcon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_10_167)">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="black"></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_10_167">
-                          <rect width="20" height="20" fill="white"></rect>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <a href="#">View Code</a>
-                  </div>
+                  <span class="linkWithIcon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
+                </svg>
+                    Código privado
+                  </span>
                 </div>
               </div>
             </article>
             <article class="projectBox">
-              <header>
-                <img width="375" src="/assets/images/project6img.jpg" alt="img1">
-              </header>
+              <img src="assets/images/project-enquete.jpg" alt="Imagem do projeto Quiz de Desenvolvimento Web" width="375" height="260" loading="lazy" />
               <div class="projectContent">
-                <h4>Título do projeto 6</h4>
-                <p>
-                  Este é um exemplo de descrição do projeto, coisas aleatórias
-                  estão aqui na descrição Este é um exemplo de projeto, gerador
-                  lorem ipsum para conteúdo fictício
-                </p>
-                <small>
-                  <strong>Tech stack:</strong> HTML , JavaScript, SASS, React
-                </small>
+                <h3>Quiz de Desenvolvimento Web</h3>
+                <p>Jogo de perguntas sobre HTML, CSS e JavaScript com 10 questões, feedback visual de acerto e erro, barra de progresso, pontuação e opção de jogar novamente.</p>
+                <p class="techStack"><strong>Tech stack:</strong> HTML, CSS, JavaScript</p>
                 <div class="projectActions">
-                  <div class="linkWithIcon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.2867 8.7133C10.6041 8.031 9.67846 7.64771 8.71334 7.64771C7.74821 7.64771 6.82259 8.031 6.14 8.7133L3.56584 11.2866C2.88324 11.9692 2.49976 12.895 2.49976 13.8604C2.49976 14.8257 2.88324 15.7515 3.56584 16.4341C4.24844 17.1167 5.17424 17.5002 6.13959 17.5002C7.10493 17.5002 8.03074 17.1167 8.71334 16.4341L10 15.1475" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M8.71332 11.2867C9.39591 11.969 10.3215 12.3523 11.2867 12.3523C12.2518 12.3523 13.1774 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5002 7.10493 17.5002 6.13959C17.5002 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8257 2.49976 13.8604 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L9.99998 4.8525" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    <a href="#">Live Preview</a>
-                  </div>
-                  <div class="linkWithIcon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_10_167)">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="black"></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_10_167">
-                          <rect width="20" height="20" fill="white"></rect>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <a href="#">View Code</a>
-                  </div>
+                  <span class="linkWithIcon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
+                </svg>
+                    Código privado
+                  </span>
                 </div>
               </div>
             </article>
-          </div>
-          </main>
-          </header>
-         
-
-
-          <footer class="footerWrapper">
-          <div class="mainFooter">
-            <div class="mainFooterColumn left">
-              <h2>Fabio Ramos</h2>
-              <img src="assets/images/Fabio Ramos Cartoon Logo.png" alt="avatar cartoon Fabio" width="40" height="40">
-            </div>
-            <div class="mainFooterColumn right">
-              <div>
-                <a href="mailto:fpramos1976@gmail.com">fpramos1976@gmail.com</a>
+            <article class="projectBox">
+              <img src="assets/images/monitor-moeda.svg" alt="Imagem do projeto Monitor de Câmbio EUR-BRL" width="375" height="260" loading="lazy" />
+              <div class="projectContent">
+                <h3>Monitor de Câmbio EUR-BRL</h3>
+                <p>Servidor em Node.js que consulta periodicamente a cotação do Euro em relação ao Real e envia um alerta automático pelo Telegram quando o valor atinge o limite configurado. Possui silenciamento temporário para evitar mensagens repetidas, credenciais em variáveis de ambiente e está preparado para deploy no Render.</p>
+                <p class="techStack"><strong>Tech stack:</strong> Node.js, Express, Dotenv, API do Telegram</p>
+                <div class="projectActions">
+                  <a class="linkWithIcon" href="https://github.com/fpramos1976/monitor-moeda" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
+                </svg>
+                    View Code
+                  </a>
+                </div>
               </div>
-              <div>
-                <ul>
-                  <li>
-                    <a href="https://github.com/fpramos1976" target="_blank">
-                      <img
-                        src="assets/images/icon-github.png"
-                        alt="icon github"
-                        width="30"
-                        height="30"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://x.com/fpramos_76?s=21" target="_blank">
-                      <img
-                        src="assets/images/icon-twitter.png"
-                        alt="icon twitter"
-                        width="30"
-                        height="30"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/icon-linkedin.png"
-                        alt="icon linkedin"
-                        width="30"
-                        height="30"
-                      />
-                    </a>
-                  </li>
-                </ul>
+            </article>
+            <article class="projectBox">
+              <img src="assets/images/monitor-de-moedas.svg" alt="Imagem do projeto Monitor de Cotação de Moedas" width="375" height="260" loading="lazy" />
+              <div class="projectContent">
+                <h3>Monitor de Cotação de Moedas</h3>
+                <p>Script em Python que monitora a cotação de moedas (Euro, Dólar, Bitcoin) em tempo real pela AwesomeAPI e envia uma notificação imediata para o celular via Telegram sempre que o valor atinge ou fica abaixo do limite configurado.</p>
+                <p class="techStack"><strong>Tech stack:</strong> Python, Requests, AwesomeAPI, API do Telegram</p>
+                <div class="projectActions">
+                  <span class="linkWithIcon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
+                </svg>
+                    Código privado
+                  </span>
+                </div>
               </div>
-            </div>
+            </article>
+            <!--
+              MODELO: para adicionar um novo projeto, copie um <article class="projectBox">
+              acima, troque a imagem (ex.: assets/images/project3img.jpg), o título,
+              a descrição, a stack e os links de "Live Preview" e "View Code".
+            -->
           </div>
+        </section>
+      </main>
 
-    
-          <div class="miniFooter">
-            <nav>
-              <ul>
-                <li>
-              <a href="index.html" style="text-decoration: none;">HOME</a>
-            </li>
-            <li>
-              <a href="about.html">SOBRE MIM</a>
-            </li>
-            <li>
-              <a href="stack.html">STACK</a>
-            </li>
-            <li>
-              <a href="project.html">PROJETO</a>
-            </li>
-            <li>
-              <a href="contact.html">CONTATO</a>
-            </li>
-              </ul>
-            </nav>
+      <footer class="footerWrapper">
+        <div class="mainFooter">
+          <div class="mainFooterColumn left">
+            <a class="brand" href="index.html">
+              <span>Fabio Ramos</span>
+              <img src="assets/images/logo-fabio.png" alt="" width="40" height="40" />
+            </a>
           </div>
-        </footer>
-
-     
-      
-      <script src="assets/main.js"></script>
-
-    </main>
+          <div class="mainFooterColumn right">
+            <a href="mailto:fpramos1976@gmail.com">fpramos1976@gmail.com</a>
+            <ul class="socialList">
+            <li>
+              <a href="https://github.com/fpramos1976" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="assets/images/icon-github.png" alt="" width="30" height="30" />
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/fpramos_76" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <img src="assets/images/icon-twitter.png" alt="" width="30" height="30" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="assets/images/icon-linkedin.png" alt="" width="30" height="30" />
+              </a>
+            </li>
+          </ul>
+          </div>
+        </div>
+        <div class="miniFooter">
+          <nav aria-label="Menu do rodapé">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">SOBRE MIM</a></li>
+              <li><a href="stack.html">STACK</a></li>
+              <li><a href="project.html" aria-current="page">PROJETOS</a></li>
+              <li><a href="contact.html">CONTATO</a></li>
+            </ul>
+          </nav>
+          <small>&copy; <span id="currentYear">2025</span> Fabio Ramos</small>
+        </div>
+      </footer>
     </div>
-
-    
   </body>
 </html>
