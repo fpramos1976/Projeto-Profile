@@ -34,7 +34,7 @@ Basta abrir o `index.html` no navegador, ou usar a extensão **Live Server** do 
 
 ## 🌐 Publicar no GitHub Pages
 Em **Settings → Pages**, escolha a branch `main` e a pasta `/ (root)`.
-O site ficará em `https://fpramos1976.github.io/projeto-profile/`.
+O site ficará em `https://fpramos1976.github.io/Projeto-Profile/`.
 
 ## 🖼️ Demonstração
 <img width="1468" height="961" alt="Captura de tela do portfólio" src="https://github.com/user-attachments/assets/60dcf4a2-c581-4545-b159-b3735698254d" />
