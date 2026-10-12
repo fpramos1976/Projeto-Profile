@@ -10,11 +10,12 @@ Apresenta meu perfil, minha stack, meus projetos, certificados e formas de conta
 ## 🚀 Tecnologias usadas
 - HTML5 (semântico e acessível)
 - CSS3 (variáveis CSS, Flexbox, Grid e media queries)
-- JavaScript (tema claro/escuro salvo no navegador)
+- JavaScript (tema claro/escuro e troca de idioma, salvos no navegador)
 
 ## ✨ Funcionalidades
 - Layout responsivo (desktop, tablet e celular)
 - Tema claro/escuro, que segue o tema do sistema e lembra a escolha do visitante
+- Site em **português e inglês**: botão **EN/PT** no topo, que segue o idioma do navegador na primeira visita e lembra a escolha
 - Destaque da página atual no menu e foco visível para navegação pelo teclado
 - Links externos abrindo em nova aba com segurança (`rel="noopener noreferrer"`)
 - Imagens otimizadas e carregamento preguiçoso (`loading="lazy"`)
@@ -61,7 +62,8 @@ Apresenta meu perfil, minha stack, meus projetos, certificados e formas de conta
 │   ├── _variables.css  # Cores, pesos de fonte e temas claro/escuro
 │   └── main.css        # Estilos principais e responsividade
 ├── assets/
-│   ├── main.js     # Tema claro/escuro e ano do rodapé
+│   ├── main.js          # Tema claro/escuro, idioma e ano do rodapé
+│   ├── translations.js  # Todos os textos do site em português e inglês
 │   └── images/     # Fotos, ícones e capas dos projetos
 └── docs/           # Prints usados neste README
 ```
@@ -73,6 +75,16 @@ Apresenta meu perfil, minha stack, meus projetos, certificados e formas de conta
    ```
 2. Abra a pasta no VS Code.
 3. Clique com o botão direito no `index.html` → **Open with Live Server** (extensão Live Server), ou simplesmente abra o arquivo no navegador.
+
+## 🌍 Editar os textos (português e inglês)
+Os textos do site ficam no arquivo `assets/translations.js`, cada um com a versão `pt` e `en`:
+```js
+"t4": {
+  "pt": "Ver projetos",
+  "en": "See projects"
+},
+```
+Para mudar um texto, procure por ele nesse arquivo (`Ctrl + F` no VS Code) e edite as duas versões. No HTML, o elemento correspondente tem o atributo `data-i18n` com a mesma chave (ex.: `data-i18n="t4"`).
 
 ## 🌐 Publicar no GitHub Pages
 1. O repositório precisa estar **público** (no plano gratuito).
