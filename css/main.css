@@ -139,6 +139,26 @@ section {
   color: var(--colorText);
   cursor: pointer;
 }
+.langToggle {
+  min-width: 44px;
+  padding: 6px 10px;
+  background-color: transparent;
+  border: 2px solid var(--colorBorder);
+  border-radius: 999px;
+  color: var(--colorText);
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: var(--fontWeightSemiBold);
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+.langToggle:hover {
+  border-color: #13b0f5;
+}
+/* Esconde a página em inglês até os textos serem traduzidos (evita "piscar" em português) */
+html[lang="en"]:not(.i18nReady) body {
+  visibility: hidden;
+}
 .primaryHeader .columnRight {
   display: flex;
   justify-content: flex-end;
@@ -504,6 +524,13 @@ html[data-theme="dark"] .imageDark {
   section {
     margin: 80px 0;
   }
+  .primaryHeader .columnLeft {
+    gap: 12px;
+  }
+  .primaryHeader .brand {
+    gap: 10px;
+    font-size: 3rem;
+  }
   .sectionBanner {
     flex-direction: column-reverse;
     text-align: center;
@@ -539,6 +566,15 @@ html[data-theme="dark"] .imageDark {
   .mainFooterColumn,
   .miniFooter nav ul {
     justify-content: center;
+  }
+}
+@media (max-width: 360px) {
+  .primaryHeader .brand {
+    font-size: 2.4rem;
+  }
+  .primaryHeader .brand img {
+    width: 32px;
+    height: 32px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stack | Fabio Ramos</title>
-    <meta name="description" content="Tecnologias com que Fabio Ramos trabalha." />
+    <title data-i18n="t72">Stack | Fabio Ramos</title>
+    <meta name="description" content="Tecnologias com que Fabio Ramos trabalha." data-i18n-attr="content:t73" />
     <meta property="og:title" content="Stack | Fabio Ramos" />
     <meta property="og:description" content="Tecnologias com que Fabio Ramos trabalha." />
     <meta property="og:image" content="assets/images/avatar-fabio.jpg" />
@@ -16,11 +16,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <!-- Carregado no head para aplicar o tema antes da página ser desenhada -->
+    <!-- Carregados no head para aplicar tema e idioma antes da página ser desenhada -->
+    <script src="assets/translations.js"></script>
     <script src="assets/main.js"></script>
   </head>
   <body class="stack-page">
-    <a class="skipLink" href="#conteudo">Pular para o conteúdo</a>
+    <a class="skipLink" href="#conteudo"><span data-i18n="t60">Pular para o conteúdo</span></a>
     <div class="container">
       <header class="primaryHeader">
         <div class="columnLeft">
@@ -31,15 +32,18 @@
           <button id="toggleDarkMode" type="button" aria-label="Alternar tema claro/escuro">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
           </button>
+          <button id="toggleLanguage" class="langToggle" type="button" aria-label="Mudar idioma para inglês" data-i18n-attr="aria-label:t61">
+            <span data-i18n="t62">EN</span>
+          </button>
         </div>
 
-        <nav class="columnRight" aria-label="Menu principal">
+        <nav class="columnRight" aria-label="Menu principal" data-i18n-attr="aria-label:t63">
           <ul class="menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">SOBRE MIM</a></li>
-            <li><a href="stack.html" aria-current="page">STACK</a></li>
-            <li><a href="project.html">PROJETOS</a></li>
-            <li><a href="contact.html">CONTATO</a></li>
+            <li><a href="index.html"><span data-i18n="t64">HOME</span></a></li>
+            <li><a href="about.html"><span data-i18n="t65">SOBRE MIM</span></a></li>
+            <li><a href="stack.html" aria-current="page"><span data-i18n="t66">STACK</span></a></li>
+            <li><a href="project.html"><span data-i18n="t67">PROJETOS</span></a></li>
+            <li><a href="contact.html"><span data-i18n="t68">CONTATO</span></a></li>
           </ul>
           <ul class="socialList">
             <li>
@@ -64,8 +68,8 @@
       <main id="conteudo">
         <section class="sectionStack">
           <header>
-            <h1>A minha Stack</h1>
-            <p class="subtitle">Tecnologias com que trabalho</p>
+            <h1><span data-i18n="t7">A minha Stack</span></h1>
+            <p class="subtitle"><span data-i18n="t8">Tecnologias com que trabalho</span></p>
           </header>
           <ul class="stackImagesContainer">
             <li>
@@ -143,13 +147,13 @@
           </div>
         </div>
         <div class="miniFooter">
-          <nav aria-label="Menu do rodapé">
+          <nav aria-label="Menu do rodapé" data-i18n-attr="aria-label:t69">
             <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html">SOBRE MIM</a></li>
-              <li><a href="stack.html" aria-current="page">STACK</a></li>
-              <li><a href="project.html">PROJETOS</a></li>
-              <li><a href="contact.html">CONTATO</a></li>
+              <li><a href="index.html"><span data-i18n="t64">HOME</span></a></li>
+              <li><a href="about.html"><span data-i18n="t65">SOBRE MIM</span></a></li>
+              <li><a href="stack.html" aria-current="page"><span data-i18n="t66">STACK</span></a></li>
+              <li><a href="project.html"><span data-i18n="t67">PROJETOS</span></a></li>
+              <li><a href="contact.html"><span data-i18n="t68">CONTATO</span></a></li>
             </ul>
           </nav>
           <small>&copy; <span id="currentYear">2025</span> Fabio Ramos</small>

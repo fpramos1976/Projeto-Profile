@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projetos | Fabio Ramos</title>
-    <meta name="description" content="Projetos desenvolvidos por Fabio Ramos." />
+    <title data-i18n="t74">Projetos | Fabio Ramos</title>
+    <meta name="description" content="Projetos desenvolvidos por Fabio Ramos." data-i18n-attr="content:t75" />
     <meta property="og:title" content="Projetos | Fabio Ramos" />
     <meta property="og:description" content="Projetos desenvolvidos por Fabio Ramos." />
     <meta property="og:image" content="assets/images/avatar-fabio.jpg" />
@@ -16,11 +16,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <!-- Carregado no head para aplicar o tema antes da página ser desenhada -->
+    <!-- Carregados no head para aplicar tema e idioma antes da página ser desenhada -->
+    <script src="assets/translations.js"></script>
     <script src="assets/main.js"></script>
   </head>
   <body class="projects-page">
-    <a class="skipLink" href="#conteudo">Pular para o conteúdo</a>
+    <a class="skipLink" href="#conteudo"><span data-i18n="t60">Pular para o conteúdo</span></a>
     <div class="container">
       <header class="primaryHeader">
         <div class="columnLeft">
@@ -31,15 +32,18 @@
           <button id="toggleDarkMode" type="button" aria-label="Alternar tema claro/escuro">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
           </button>
+          <button id="toggleLanguage" class="langToggle" type="button" aria-label="Mudar idioma para inglês" data-i18n-attr="aria-label:t61">
+            <span data-i18n="t62">EN</span>
+          </button>
         </div>
 
-        <nav class="columnRight" aria-label="Menu principal">
+        <nav class="columnRight" aria-label="Menu principal" data-i18n-attr="aria-label:t63">
           <ul class="menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">SOBRE MIM</a></li>
-            <li><a href="stack.html">STACK</a></li>
-            <li><a href="project.html" aria-current="page">PROJETOS</a></li>
-            <li><a href="contact.html">CONTATO</a></li>
+            <li><a href="index.html"><span data-i18n="t64">HOME</span></a></li>
+            <li><a href="about.html"><span data-i18n="t65">SOBRE MIM</span></a></li>
+            <li><a href="stack.html"><span data-i18n="t66">STACK</span></a></li>
+            <li><a href="project.html" aria-current="page"><span data-i18n="t67">PROJETOS</span></a></li>
+            <li><a href="contact.html"><span data-i18n="t68">CONTATO</span></a></li>
           </ul>
           <ul class="socialList">
             <li>
@@ -64,132 +68,132 @@
       <main id="conteudo">
         <section class="sectionProjects">
           <header>
-            <h1>Projetos</h1>
-            <p class="subtitle">Projetos desenvolvidos</p>
+            <h1><span data-i18n="t37">Projetos</span></h1>
+            <p class="subtitle"><span data-i18n="t38">Projetos desenvolvidos</span></p>
           </header>
           <div class="projectsContainer">
             <article class="projectBox">
-              <img src="assets/images/project1img.jpg" alt="Imagem do projeto Portfólio" width="375" height="260" loading="lazy" />
+              <img src="assets/images/project1img.jpg" alt="Imagem do projeto Portfólio" data-i18n-attr="alt:t11" width="375" height="260" loading="lazy" />
               <div class="projectContent">
-                <h3>Portfólio</h3>
-                <p>Meu primeiro projeto utilizando HTML, CSS e JavaScript, desenvolvido como parte do meu aprendizado em desenvolvimento web. É um portfólio pessoal onde apresento minhas informações, habilidades, projetos e formas de contato. O objetivo foi praticar a estruturação de páginas com HTML, a estilização com CSS e adicionar interatividade com JavaScript (tema claro/escuro), criando um layout responsivo.</p>
-                <p class="techStack"><strong>Tech stack:</strong> HTML, CSS, JavaScript</p>
+                <h3><span data-i18n="t12">Portfólio</span></h3>
+                <p><span data-i18n="t13">Meu primeiro projeto utilizando HTML, CSS e JavaScript, desenvolvido como parte do meu aprendizado em desenvolvimento web. É um portfólio pessoal onde apresento minhas informações, habilidades, projetos e formas de contato. O objetivo foi praticar a estruturação de páginas com HTML, a estilização com CSS e adicionar interatividade com JavaScript (tema claro/escuro), criando um layout responsivo.</span></p>
+                <p class="techStack"><strong>Tech stack:</strong> <span data-i18n="t14">HTML, CSS, JavaScript</span></p>
                 <div class="projectActions">
                   <a class="linkWithIcon" href="https://fpramos1976.github.io/Projeto-Profile/" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path d="M11.2867 8.7133C10.6041 8.031 9.67846 7.64771 8.71334 7.64771C7.74821 7.64771 6.82259 8.031 6.14 8.7133L3.56584 11.2866C2.88324 11.9692 2.49976 12.895 2.49976 13.8604C2.49976 14.8257 2.88324 15.7515 3.56584 16.4341C4.24844 17.1167 5.17424 17.5002 6.13959 17.5002C7.10493 17.5002 8.03074 17.1167 8.71334 16.4341L10 15.1475" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M8.71332 11.2867C9.39591 11.969 10.3215 12.3523 11.2867 12.3523C12.2518 12.3523 13.1774 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5002 7.10493 17.5002 6.13959C17.5002 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8257 2.49976 13.8604 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L9.99998 4.8525" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                    Live Preview
+                    <span data-i18n="t9">Ver online</span>
                   </a>
                   <a class="linkWithIcon" href="https://github.com/fpramos1976/Projeto-Profile" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
                 </svg>
-                    View Code
+                    <span data-i18n="t10">Ver código</span>
                   </a>
                 </div>
               </div>
             </article>
             <article class="projectBox">
-              <img src="assets/images/project-relogio.jpg" alt="Imagem do projeto Relógio Digital" width="375" height="260" loading="lazy" />
+              <img src="assets/images/project-relogio.jpg" alt="Imagem do projeto Relógio Digital" data-i18n-attr="alt:t15" width="375" height="260" loading="lazy" />
               <div class="projectContent">
-                <h3>Relógio Digital</h3>
-                <p>Relógio digital com data que se atualiza a cada segundo, feito com JavaScript puro. Pratica manipulação do DOM, uso do objeto Date, formatação com padStart e atualização periódica com setInterval.</p>
-                <p class="techStack"><strong>Tech stack:</strong> HTML, CSS, JavaScript</p>
+                <h3><span data-i18n="t16">Relógio Digital</span></h3>
+                <p><span data-i18n="t17">Relógio digital com data que se atualiza a cada segundo, feito com JavaScript puro. Pratica manipulação do DOM, uso do objeto Date, formatação com padStart e atualização periódica com setInterval.</span></p>
+                <p class="techStack"><strong>Tech stack:</strong> <span data-i18n="t14">HTML, CSS, JavaScript</span></p>
                 <div class="projectActions">
                   <a class="linkWithIcon" href="https://fpramos1976.github.io/RELOGIO/" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path d="M11.2867 8.7133C10.6041 8.031 9.67846 7.64771 8.71334 7.64771C7.74821 7.64771 6.82259 8.031 6.14 8.7133L3.56584 11.2866C2.88324 11.9692 2.49976 12.895 2.49976 13.8604C2.49976 14.8257 2.88324 15.7515 3.56584 16.4341C4.24844 17.1167 5.17424 17.5002 6.13959 17.5002C7.10493 17.5002 8.03074 17.1167 8.71334 16.4341L10 15.1475" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M8.71332 11.2867C9.39591 11.969 10.3215 12.3523 11.2867 12.3523C12.2518 12.3523 13.1774 11.969 13.86 11.2867L16.4342 8.71334C17.1168 8.03074 17.5002 7.10493 17.5002 6.13959C17.5002 5.17424 17.1168 4.24844 16.4342 3.56584C15.7516 2.88324 14.8257 2.49976 13.8604 2.49976C12.8951 2.49976 11.9693 2.88324 11.2867 3.56584L9.99998 4.8525" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                    Live Preview
+                    <span data-i18n="t9">Ver online</span>
                   </a>
                   <a class="linkWithIcon" href="https://github.com/fpramos1976/RELOGIO" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
                 </svg>
-                    View Code
+                    <span data-i18n="t10">Ver código</span>
                   </a>
                 </div>
               </div>
             </article>
             <article class="projectBox">
-              <img src="assets/images/project-lista-de-tarefas.jpg" alt="Imagem do projeto Lista de Tarefas" width="375" height="260" loading="lazy" />
+              <img src="assets/images/project-lista-de-tarefas.jpg" alt="Imagem do projeto Lista de Tarefas" data-i18n-attr="alt:t18" width="375" height="260" loading="lazy" />
               <div class="projectContent">
-                <h3>Lista de Tarefas</h3>
-                <p>Gerenciador de tarefas em React: adicionar, concluir, editar e excluir tarefas. Pratica componentes, estado com useState, formulários controlados e renderização de listas.</p>
-                <p class="techStack"><strong>Tech stack:</strong> React, Vite, JavaScript</p>
+                <h3><span data-i18n="t19">Lista de Tarefas</span></h3>
+                <p><span data-i18n="t20">Gerenciador de tarefas em React: adicionar, concluir, editar e excluir tarefas. Pratica componentes, estado com useState, formulários controlados e renderização de listas.</span></p>
+                <p class="techStack"><strong>Tech stack:</strong> <span data-i18n="t21">React, Vite, JavaScript</span></p>
                 <div class="projectActions">
                   <a class="linkWithIcon" href="https://github.com/fpramos1976/LISTA_DE_TAREFAS" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
                 </svg>
-                    View Code
+                    <span data-i18n="t10">Ver código</span>
                   </a>
                 </div>
               </div>
             </article>
             <article class="projectBox">
-              <img src="assets/images/project-imc.jpg" alt="Imagem do projeto Calculadora de IMC" width="375" height="260" loading="lazy" />
+              <img src="assets/images/project-imc.jpg" alt="Imagem do projeto Calculadora de IMC" data-i18n-attr="alt:t23" width="375" height="260" loading="lazy" />
               <div class="projectContent">
-                <h3>Calculadora de IMC</h3>
-                <p>Calculadora de Índice de Massa Corporal que valida os dados digitados, calcula o IMC e mostra a classificação (abaixo do peso, normal, sobrepeso e graus de obesidade).</p>
-                <p class="techStack"><strong>Tech stack:</strong> HTML, CSS, JavaScript</p>
+                <h3><span data-i18n="t24">Calculadora de IMC</span></h3>
+                <p><span data-i18n="t25">Calculadora de Índice de Massa Corporal que valida os dados digitados, calcula o IMC e mostra a classificação (abaixo do peso, normal, sobrepeso e graus de obesidade).</span></p>
+                <p class="techStack"><strong>Tech stack:</strong> <span data-i18n="t14">HTML, CSS, JavaScript</span></p>
                 <div class="projectActions">
                   <span class="linkWithIcon">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
                 </svg>
-                    Código privado
+                    <span data-i18n="t22">Código privado</span>
                   </span>
                 </div>
               </div>
             </article>
             <article class="projectBox">
-              <img src="assets/images/project-enquete.jpg" alt="Imagem do projeto Quiz de Desenvolvimento Web" width="375" height="260" loading="lazy" />
+              <img src="assets/images/project-enquete.jpg" alt="Imagem do projeto Quiz de Desenvolvimento Web" data-i18n-attr="alt:t26" width="375" height="260" loading="lazy" />
               <div class="projectContent">
-                <h3>Quiz de Desenvolvimento Web</h3>
-                <p>Jogo de perguntas sobre HTML, CSS e JavaScript com 10 questões, feedback visual de acerto e erro, barra de progresso, pontuação e opção de jogar novamente.</p>
-                <p class="techStack"><strong>Tech stack:</strong> HTML, CSS, JavaScript</p>
+                <h3><span data-i18n="t27">Quiz de Desenvolvimento Web</span></h3>
+                <p><span data-i18n="t28">Jogo de perguntas sobre HTML, CSS e JavaScript com 10 questões, feedback visual de acerto e erro, barra de progresso, pontuação e opção de jogar novamente.</span></p>
+                <p class="techStack"><strong>Tech stack:</strong> <span data-i18n="t14">HTML, CSS, JavaScript</span></p>
                 <div class="projectActions">
                   <span class="linkWithIcon">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
                 </svg>
-                    Código privado
+                    <span data-i18n="t22">Código privado</span>
                   </span>
                 </div>
               </div>
             </article>
             <article class="projectBox">
-              <img src="assets/images/monitor-moeda.svg" alt="Imagem do projeto Monitor de Câmbio EUR-BRL" width="375" height="260" loading="lazy" />
+              <img src="assets/images/monitor-moeda.svg" alt="Imagem do projeto Monitor de Câmbio EUR-BRL" data-i18n-attr="alt:t29" width="375" height="260" loading="lazy" />
               <div class="projectContent">
-                <h3>Monitor de Câmbio EUR-BRL</h3>
-                <p>Servidor em Node.js que consulta periodicamente a cotação do Euro em relação ao Real e envia um alerta automático pelo Telegram quando o valor atinge o limite configurado. Possui silenciamento temporário para evitar mensagens repetidas, credenciais em variáveis de ambiente e está preparado para deploy no Render.</p>
-                <p class="techStack"><strong>Tech stack:</strong> Node.js, Express, Dotenv, API do Telegram</p>
+                <h3><span data-i18n="t30">Monitor de Câmbio EUR-BRL</span></h3>
+                <p><span data-i18n="t31">Servidor em Node.js que consulta periodicamente a cotação do Euro em relação ao Real e envia um alerta automático pelo Telegram quando o valor atinge o limite configurado. Possui silenciamento temporário para evitar mensagens repetidas, credenciais em variáveis de ambiente e está preparado para deploy no Render.</span></p>
+                <p class="techStack"><strong>Tech stack:</strong> <span data-i18n="t32">Node.js, Express, Dotenv, API do Telegram</span></p>
                 <div class="projectActions">
                   <a class="linkWithIcon" href="https://github.com/fpramos1976/monitor-moeda" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
                 </svg>
-                    View Code
+                    <span data-i18n="t10">Ver código</span>
                   </a>
                 </div>
               </div>
             </article>
             <article class="projectBox">
-              <img src="assets/images/monitor-de-moedas.svg" alt="Imagem do projeto Monitor de Cotação de Moedas" width="375" height="260" loading="lazy" />
+              <img src="assets/images/monitor-de-moedas.svg" alt="Imagem do projeto Monitor de Cotação de Moedas" data-i18n-attr="alt:t33" width="375" height="260" loading="lazy" />
               <div class="projectContent">
-                <h3>Monitor de Cotação de Moedas</h3>
-                <p>Script em Python que monitora a cotação de moedas (Euro, Dólar, Bitcoin) em tempo real pela AwesomeAPI e envia uma notificação imediata para o celular via Telegram sempre que o valor atinge ou fica abaixo do limite configurado.</p>
-                <p class="techStack"><strong>Tech stack:</strong> Python, Requests, AwesomeAPI, API do Telegram</p>
+                <h3><span data-i18n="t34">Monitor de Cotação de Moedas</span></h3>
+                <p><span data-i18n="t35">Script em Python que monitora a cotação de moedas (Euro, Dólar, Bitcoin) em tempo real pela AwesomeAPI e envia uma notificação imediata para o celular via Telegram sempre que o valor atinge ou fica abaixo do limite configurado.</span></p>
+                <p class="techStack"><strong>Tech stack:</strong> <span data-i18n="t36">Python, Requests, AwesomeAPI, API do Telegram</span></p>
                 <div class="projectActions">
                   <span class="linkWithIcon">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
                 </svg>
-                    Código privado
+                    <span data-i18n="t22">Código privado</span>
                   </span>
                 </div>
               </div>
@@ -233,13 +237,13 @@
           </div>
         </div>
         <div class="miniFooter">
-          <nav aria-label="Menu do rodapé">
+          <nav aria-label="Menu do rodapé" data-i18n-attr="aria-label:t69">
             <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html">SOBRE MIM</a></li>
-              <li><a href="stack.html">STACK</a></li>
-              <li><a href="project.html" aria-current="page">PROJETOS</a></li>
-              <li><a href="contact.html">CONTATO</a></li>
+              <li><a href="index.html"><span data-i18n="t64">HOME</span></a></li>
+              <li><a href="about.html"><span data-i18n="t65">SOBRE MIM</span></a></li>
+              <li><a href="stack.html"><span data-i18n="t66">STACK</span></a></li>
+              <li><a href="project.html" aria-current="page"><span data-i18n="t67">PROJETOS</span></a></li>
+              <li><a href="contact.html"><span data-i18n="t68">CONTATO</span></a></li>
             </ul>
           </nav>
           <small>&copy; <span id="currentYear">2025</span> Fabio Ramos</small>
