@@ -59,7 +59,7 @@ Apresenta meu perfil, minha stack, meus projetos, certificados e formas de conta
 ├── project.html    # Projetos
 ├── contact.html    # Contato
 ├── css/
-│   ├── _variables.css  # Cores, pesos de fonte e temas claro/escuro
+│   ├── variables.css   # Cores, pesos de fonte e temas claro/escuro
 │   └── main.css        # Estilos principais e responsividade
 ├── assets/
 │   ├── main.js          # Tema claro/escuro, idioma e ano do rodapé
@@ -88,6 +88,7 @@ Para mudar um texto, procure por ele nesse arquivo (`Ctrl + F` no VS Code) e edi
 
 ## 🌐 Publicar no GitHub Pages
 1. O repositório precisa estar **público** (no plano gratuito).
+   O arquivo `.nojekyll` na raiz desliga o Jekyll do GitHub Pages, que ignoraria arquivos começando com `_`.
 2. Em **Settings → Pages**, escolha **Deploy from a branch**, a branch `main` e a pasta `/ (root)`.
 3. Em poucos minutos o site fica disponível em `https://fpramos1976.github.io/Projeto-Profile/`.
 
