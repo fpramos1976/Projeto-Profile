@@ -253,9 +253,10 @@ html[data-theme="dark"] .socialList img {
   margin-bottom: 10px;
 }
 .stackImagesContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  justify-items: center;
+  /* flex + wrap: a última linha fica centralizada quando não está completa */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   row-gap: 60px;
   max-width: 1024px;
   margin: 100px auto 0 auto;
@@ -267,6 +268,7 @@ html[data-theme="dark"] .socialList img {
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  width: 140px;
   color: var(--colorP);
   font-size: 1.6rem;
 }
@@ -508,9 +510,11 @@ html[data-theme="dark"] .imageDark {
     height: 260px;
   }
   .stackImagesContainer {
-    grid-template-columns: repeat(3, 1fr);
     row-gap: 40px;
     margin-top: 60px;
+  }
+  .stackImagesContainer li {
+    width: 33.333%;
   }
   .stackImagesContainer img {
     width: 80px;
